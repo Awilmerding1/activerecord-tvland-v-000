@@ -7,7 +7,7 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    "#{self.characters.pluck(:name)}.to_s - #{self.shows.pluck(:name)}"
+    "#{self.characters.pluck(:name)} - #{self.shows.pluck(:name)}"
   end
 
 end
